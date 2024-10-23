@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  @apply relative w-full h-full min-h-[100svh] flex flex-col flex-none;
+}

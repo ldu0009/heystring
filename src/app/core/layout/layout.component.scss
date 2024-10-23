@@ -1,0 +1,7 @@
+:host {
+  @apply relative w-full h-full flex flex-col flex-none;
+}
+
+router-outlet {
+  margin-top: 4rem;
+}
