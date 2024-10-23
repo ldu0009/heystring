@@ -1,0 +1,30 @@
+{
+  "page": "main",
+  "sections": [
+    {
+      "title": "Section 1",
+      "description": "Description 1",
+      "videoId": "PjPRUj2-Y0I"
+    },
+    {
+      "title": "Section 2",
+      "description": "Description 2",
+      "videoId": "qXpvuKMmLww"
+    },
+    {
+      "title": "Section 3",
+      "description": "Description 3",
+      "videoId": "-YVTjWnV6pM"
+    },
+    {
+      "title": "Section 4",
+      "description": "Description 4",
+      "videoId": "BCFdtX07u-E"
+    },
+    {
+      "title": "Section 5",
+      "description": "Description 5",
+      "videoId": "wo23cOXs5eQ"
+    }
+  ]
+}

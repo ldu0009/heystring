@@ -1,3 +1,7 @@
 :host {
-  @apply w-full h-16 flex flex-none flex-row items-center justify-between px-8 fixed top-0 bg-black/40 backdrop-blur text-white;
+  @apply w-full h-36 flex flex-none flex-row items-center justify-between gap-8 px-28 fixed top-0 bg-white/70 backdrop-blur  z-10;
+}
+
+button {
+  @apply text-black text-2xl font-light transform transition-all hover:text-3xl hover:font-extrabold z-10;
 }
