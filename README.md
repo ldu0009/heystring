@@ -1,27 +1,42 @@
-# HeyString
+# 🚀 HeyString
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## 📋 사용 플랫폼 및 버전
 
-## Development server
+- **플랫폼**: Angular 18.2
+- **Node 버전**: Node.js 18.19.1
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ 빌드 및 실행 방법
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+프로젝트를 로컬에서 빌드하고 실행하기 위한 간단한 가이드입니다.
 
-## Build
+### 1. Node.js 버전 맞추기
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+먼저, **Node.js** 버전을 프로젝트와 호환되는 **18.19.1**로 맞춤. `nvm`을 사용하여 버전을 쉽게 관리:
 
-## Running unit tests
+```bash
+nvm install 18.19.1
+nvm use 18.19.1
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2. Dependencies 설치
 
-## Running end-to-end tests
+패키지를 설치하기 위해, 프로젝트 디렉토리에서 아래 명령어를 실행:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install
+```
 
-## Further help
+### 3. 애플리케이션 실행
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+모든 패키지가 설치되었으면, 개발 서버를 시작:
+
+```bash
+npm start
+```
+
+### 🛠 Troubleshooting
+
+    - Node.js 버전이 맞지 않으면, nvm 또는 다른 버전 관리 도구를 사용해 버전을 정확히 맞춰주세요.
+    - 설치된 패키지에서 충돌이 발생할 경우, npm install을 다시 실행하여 패키지를 최신으로 업데이트해보세요.
