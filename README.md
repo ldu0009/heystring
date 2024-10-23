@@ -36,6 +36,8 @@ npm install
 npm start
 ```
 
+---
+
 ### 🛠 Troubleshooting
 
     Node.js 버전이 맞지 않으면, nvm 또는 다른 버전 관리 도구를 사용해 버전을 정확히 맞춰주세요.
