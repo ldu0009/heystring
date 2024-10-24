@@ -1,3 +1,31 @@
+<section class="content">
+  <div
+    class="absolute top-0 w-full banner bg-black/30 flex flex-col justify-center items-center z-10"
+  >
+    <svg viewBox="0 0 1350 600">
+      <text
+        class="svg-title"
+        x="50%"
+        y="50%"
+        fill="transparent"
+        text-anchor="middle"
+        dominant-baseline="middle"
+      >
+        Library 42
+      </text>
+    </svg>
+  </div>
+  <div class="absolute w-full h-full z-1">
+    <video
+      class="w-full h-full object-cover"
+      src=".\assets\videos\banner.mp4"
+      autoplay
+      loop
+      muted
+    ></video>
+  </div>
+</section>
+
 @for (section of pageData.sections; track section) {
 <section class="content">
   <p class="text-3xl font-semibold pb-9">{{ section.title }}</p>
