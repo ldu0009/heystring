@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hey-string": {
+    "library-42": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,20 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hey-string",
+            "outputPath": "dist/library-42",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "styles": [
+              "src/styles.scss",
+              "node_modules/keen-slider/keen-slider.min.css"
+            ],
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -60,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hey-string:build:production"
+              "buildTarget": "library-42:build:production"
             },
             "development": {
-              "buildTarget": "hey-string:build:development"
+              "buildTarget": "library-42:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +81,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles.scss", "keen-slider/keen-slider.min.css"],
             "scripts": []
           }
         }

@@ -2,29 +2,19 @@
   "page": "main",
   "sections": [
     {
-      "title": "Section 1",
-      "description": "Description 1",
-      "videoId": "PjPRUj2-Y0I"
+      "title": "가야금 민요展",
+      "description": "세 대의 가야금을 위한 민요연곡 I 편곡 김희조",
+      "videoId": "vSpcW3DqzYw"
     },
     {
-      "title": "Section 2",
-      "description": "Description 2",
-      "videoId": "qXpvuKMmLww"
+      "title": "가야금 무악展",
+      "description": "산조가야금 4중주를 위한 '4(Sha)Manism' I 작곡 김현섭",
+      "videoId": "soyLZVHRXxE"
     },
     {
-      "title": "Section 3",
-      "description": "Description 3",
-      "videoId": "-YVTjWnV6pM"
-    },
-    {
-      "title": "Section 4",
-      "description": "Description 4",
-      "videoId": "BCFdtX07u-E"
-    },
-    {
-      "title": "Section 5",
-      "description": "Description 5",
-      "videoId": "wo23cOXs5eQ"
+      "title": "이해식 가야금 작품展",
+      "description": "네 대의 25현금을 위한 불꽃으로부터의 명상 I 작곡 이해식 I 편곡 손성국",
+      "videoId": "8dYvTbcyfYs"
     }
   ]
 }

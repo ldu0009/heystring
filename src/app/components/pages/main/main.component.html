@@ -1,41 +1,83 @@
-<section class="content">
-  <div
-    class="absolute top-0 w-full banner bg-black/30 flex flex-col justify-center items-center z-10"
-  >
-    <svg viewBox="0 0 1350 600">
-      <text
-        class="svg-title"
-        x="50%"
-        y="50%"
-        fill="transparent"
-        text-anchor="middle"
-        dominant-baseline="middle"
+<div class="relative w-full block overflow-hidden" #scrollField>
+  <section class="relative w-full h-screen bg-black mt-36">
+    <div
+      class="absolute top-0 w-full banner bg-black/30 flex flex-col justify-center items-center z-10"
+    >
+      <svg viewBox="0 0 1350 600">
+        <text
+          class="svg-title"
+          x="50%"
+          y="50%"
+          fill="transparent"
+          text-anchor="middle"
+          dominant-baseline="middle"
+        >
+          Library 42
+        </text>
+      </svg>
+    </div>
+    <div class="absolute w-full h-full z-1">
+      <video
+        class="banner-video"
+        src=".\assets\videos\banner.mp4"
+        autoplay
+        loop
+        [muted]="true"
+      ></video>
+    </div>
+  </section>
+  <section class="content bg-[#569F98] flex flex-col gap-2 text-white text-xl">
+    <p class="kr-font" #fonts>기존의 연주회에서 자주 만나기 어렵거나,</p>
+    <p class="kr-font" #fonts>
+      영상이나 음원 자료조차 찾기 힘든 곡들을 발굴하여 연주하고,
+    </p>
+    <p class="kr-font" #fonts>
+      그 자료를 남김으로써 가야금 음악의 아카이브 역할을 하고자 만들어진
+      단체이다.
+    </p>
+    <br />
+    <p class="kr-font" #fonts>
+      「사이」는 하나의 공연을 한 권의 책이라고 생각하고
+    </p>
+    <p class="kr-font" #fonts>
+      한 권 한 권 책을 모아 「사이」의 서재-Library를 만들고자 한다.
+    </p>
+    <p class="kr-font" #fonts>
+      차곡차곡 채운 사이의 서재가 가야금에 대한 궁금증을 해결할 수 있는
+    </p>
+    <p class="kr-font" #fonts>
+      아카이브가 되고, 다른 곳에서는 찾기 힘들었던 책을 발견할 수 있는
+      보물창고와 같길 희망한다.
+    </p>
+    <br />
+    <p class="kr-font" #fonts>
+      2021년 8월 <이해식 가야금 작품展> 을 통해 본격적인 활동을 시작하였고
+    </p>
+    <p class="kr-font" #fonts>
+      2022년 6월 두 번째 연주회 <도널드워맥 가야금 작품展>
+    </p>
+    <p class="kr-font" #fonts>
+      2023년 12월 세 번째 연주회 <가야금 민요展> 을 개최한 바 있다.
+    </p>
+  </section>
+  <section class="relative w-full h-[300vh] bg-black" #videos>
+    @for (section of pageData.sections; track section) {
+    <div
+      class="w-full h-[100vh] flex flex-col justify-center items-center bg-black"
+      #videoEl
+    >
+      <p class="text-3xl font-semibold pb-9 text-white">{{ section.title }}</p>
+      <youtube-player
+        [videoId]="section.videoId"
+        suggestedQuality="small"
+        [width]="1024"
+        [height]="560"
       >
-        Library 42
-      </text>
-    </svg>
-  </div>
-  <div class="absolute w-full h-full z-1">
-    <video
-      class="w-full h-full object-cover"
-      src=".\assets\videos\banner.mp4"
-      autoplay
-      loop
-      muted
-    ></video>
-  </div>
-</section>
-<!-- 
-@for (section of pageData.sections; track section) {
-<section class="content">
-  <p class="text-3xl font-semibold pb-9">{{ section.title }}</p>
-  <youtube-player
-    [videoId]="section.videoId"
-    suggestedQuality="small"
-    [width]="1024"
-    [height]="560"
-  >
-  </youtube-player>
-  <p class="text-xl font-medium pt-12">{{ section.description }}</p>
-</section>
-} -->
+      </youtube-player>
+      <p class="text-xl font-medium pt-12 text-white">
+        {{ section.description }}
+      </p>
+    </div>
+    }
+  </section>
+</div>

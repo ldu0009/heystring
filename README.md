@@ -1,4 +1,4 @@
-# 🚀 HeyString
+# 🚀 Library 42
 
 ## 📋 사용 플랫폼 및 버전
 

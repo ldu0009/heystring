@@ -1,5 +1,5 @@
 {
-  "name": "hey-string",
+  "name": "library-42",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:hey-string": "node dist/hey-string/server/server.mjs"
+    "serve:ssr:library-42": "node dist/library-42/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +23,8 @@
     "@angular/ssr": "^18.2.3",
     "@angular/youtube-player": "^18.2.9",
     "express": "^4.18.2",
+    "gsap": "^3.12.5",
+    "keen-slider": "^6.8.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
