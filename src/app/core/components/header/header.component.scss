@@ -1,3 +1,6 @@
+:host {
+  @apply relative w-full;
+}
 button {
-  @apply text-black text-2xl font-light transform transition-all hover:text-3xl hover:font-extrabold z-10;
+  @apply text-black text-xs sm:text-2xl font-light transform transition-all hover:text-base sm:hover:text-3xl hover:font-extrabold z-10;
 }

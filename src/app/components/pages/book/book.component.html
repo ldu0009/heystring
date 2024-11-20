@@ -1,1 +1,69 @@
-<p>book works!</p>,
+<div
+  class="relative pb-4 pt-44 sm:pb-8 px-2 sm:px-12 w-full h-full flex flex-col"
+>
+  <div class="w-full h-24 sm:h-[20rem] flex flex-row gap-6">
+    @for (book of bookList; track $index) {
+    <div class="relative flex flex-col gap-2 w-full h-full">
+      <button
+        class="relative w-full h-full transition-all transform duration-200 ease-in-out"
+        (click)="onSelectBook($index)"
+        [ngClass]="{
+          'scale-100': $index !== selectedBook,
+          'scale-110': $index === selectedBook
+        }"
+      >
+        <img
+          class="object-contain w-full h-full"
+          src=".\assets\images\library\{{ $index + 1 }}-1.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-0 w-full p-2 break-keep text-center font-extrabold text-xs sm:text-base transition-all transform duration-200 ease-in-out"
+          [ngClass]="{
+            'text-white text-sm bg-black/40': $index !== selectedBook,
+            'text-[#569F98] text-lg bg-black/10': $index === selectedBook
+          }"
+        >
+          {{ bookNames[$index] }}
+        </p>
+      </button>
+    </div>
+    }
+  </div>
+  <div
+    class="relative w-full h-full flex justify-center items-center py-12 px-8"
+  >
+    <div
+      class="relative w-full h-full flex flex-col px-0 justify-between items-center"
+    >
+      <div class="text-white text-xl sm:text-3xl font-semibold">
+        {{ bookNames[selectedBook] }}
+      </div>
+      <div
+        class="relative w-full h-full py-6 sm:py-12 flex justify-center items-center"
+        #videoDom
+      >
+        <youtube-player
+          #player
+          [videoId]="bookList[selectedBook][selectedBookItem]"
+          suggestedQuality="small"
+          [width]="videoDom.offsetWidth"
+          [height]="(videoDom.offsetWidth * 9) / 16"
+        >
+        </youtube-player>
+      </div>
+      <div class="w-full flex flex-row justify-center items-center gap-4">
+        @for (item of bookList[selectedBook]; track $index) {
+        <button
+          class="rounded-full transition-all transform duration-200 ease-in-out"
+          [ngClass]="{
+            'w-2 h-2 bg-white': $index != selectedBookItem,
+            'w-4 h-4 bg-[#569F98]': $index == selectedBookItem
+          }"
+          (click)="onSelectedBookItem($index)"
+        ></button>
+        }
+      </div>
+    </div>
+  </div>
+</div>

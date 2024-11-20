@@ -1,1 +1,72 @@
-<p>library works!</p>,
+<div
+  class="relative min-h-screen pt-40 pb-4 sm:pt-44 sm:pb-8 px-2 sm:px-12 w-full flex flex-row flex-wrap"
+>
+  @for (library of libraryList; track $index) {
+  <button
+    class="w-1/2 sm:w-1/4 md:1/4 p-2 transition-all transform duration-200 ease-in-out hover:scale-105 active:scale-95"
+    (click)="selectLibrary($index)"
+  >
+    <img src=".\assets\images\library\{{ $index + 1 }}-1.jpg" alt="" />
+  </button>
+  }
+</div>
+<div
+  class="fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-row justify-start items-start bg-[#0e0e0e]/30 backdrop-blur transition-all transform duration-200 ease-in-out overflow-hidden z-[10000]"
+  [ngClass]="{
+    'w-0 h-0 p-0 rounded-full': selectedLibrary < 0,
+    'w-full h-full p-8 rounded-none': selectedLibrary >= 0
+  }"
+>
+  <div class="relative w-full h-full flex flex-row">
+    <button
+      class="absolute top-0 right-4 w-5 sm:w-8 h-5 sm:h-8"
+      (click)="closePopup()"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M6.22 8L1.10889 0H4.66889L8 5.21391L11.3311 0H14.8911L9.78 8L14.8911 16H11.3311L8 10.7861L4.66889 16H1.10889L6.22 8Z"
+          fill="#ffffff99"
+        />
+      </svg>
+    </button>
+    @if (selectedLibraryItem>0) {
+
+    <button
+      class="absolute top-1/2 -translate-y-1/2 left-0 w-8 sm:w-12 h-8 sm:h-12"
+      (click)="selectedLibraryItem = selectedLibraryItem - 1"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M7.82842 8.00003L12.4142 3.41424L9.58578 0.585815L2.17157 8.00003L9.58578 15.4142L12.4142 12.5858L7.82842 8.00003Z"
+          fill="#ffffff99"
+        />
+      </svg>
+    </button>
+    } @if((libraryList[selectedLibrary]?.length-1)!=selectedLibraryItem){
+    <button
+      class="absolute top-1/2 -translate-y-1/2 right-0 w-8 sm:w-12 h-8 sm:h-12"
+      (click)="selectedLibraryItem = selectedLibraryItem + 1"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M8.1716 8.00003L3.58582 3.41424L6.41424 0.585815L13.8285 8.00003L6.41424 15.4142L3.58582 12.5858L8.1716 8.00003Z"
+          fill="#ffffff99"
+        />
+      </svg>
+    </button>
+    } @for (item of libraryList[selectedLibrary]; track $index) {
+    <img
+      class="absolute w-4/5 sm:w-2/3 h-4/5 sm:h-4/5 top-1/2 -translate-y-1/2 object-contain transition-all transform duration-200 ease-in-out"
+      src=".\assets\images\library\{{ selectedLibrary + 1 }}-{{
+        $index + 1
+      }}.jpg"
+      alt=""
+      [ngClass]="{
+        'left-1/2 -translate-x-1/2': $index === selectedLibraryItem,
+        '-left-full': $index < selectedLibraryItem,
+        '-right-full': $index > selectedLibraryItem
+      }"
+    />
+    }
+  </div>
+</div>

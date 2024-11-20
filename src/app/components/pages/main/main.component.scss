@@ -1,5 +1,5 @@
 .content {
-  @apply relative w-full h-full px-8 min-h-[100svh] flex flex-col justify-center items-center flex-none;
+  @apply relative w-screen h-full px-8 min-h-[100svh] flex flex-col justify-center items-center flex-none;
 }
 .videos > div {
   opacity: 0; // 처음엔 숨김
@@ -10,12 +10,8 @@
   position: relative;
 }
 .banner {
-  height: calc(100% - 9rem);
-}
-
-.banner-video {
-  width: 100%;
-  aspect-ratio: 16/12;
+  height: calc(100%);
+  overflow: hidden;
 }
 
 .kr-font {
@@ -26,7 +22,7 @@
 }
 
 video {
-  height: calc(100% - 9rem);
+  object-fit: cover;
 }
 
 svg {

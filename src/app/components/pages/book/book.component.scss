@@ -1,3 +1,3 @@
 :host {
-  display: block;
+  @apply relative w-screen sm:max-w-[67%] h-full min-h-[100vh]  flex flex-col;
 }

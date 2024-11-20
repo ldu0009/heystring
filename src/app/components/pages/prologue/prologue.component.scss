@@ -1,5 +1,5 @@
 :host {
-  @apply relative w-full flex flex-col flex-none pt-40 bg-black;
+  @apply relative w-screen sm:max-w-[67%] flex flex-col flex-none pt-40;
 }
 [class^="number-slide"],
 [class*=" number-slide"] {

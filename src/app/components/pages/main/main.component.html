@@ -1,7 +1,7 @@
 <div class="relative w-full block overflow-hidden" #scrollField>
-  <section class="relative w-full h-screen bg-black mt-36">
+  <section class="relative w-full h-screen bg-[#0e0e0e] mt-36">
     <div
-      class="absolute top-0 w-full banner bg-black/30 flex flex-col justify-center items-center z-10"
+      class="absolute top-0 w-full banner bg-[#0e0e0e]/30 flex flex-col justify-center items-center z-10"
     >
       <svg viewBox="0 0 1350 600">
         <text
@@ -18,7 +18,7 @@
     </div>
     <div class="absolute w-full h-full z-1">
       <video
-        class="banner-video"
+        class="w-full h-full object-cover"
         src=".\assets\videos\banner.mp4"
         autoplay
         loop
@@ -60,10 +60,10 @@
       2023년 12월 세 번째 연주회 <가야금 민요展> 을 개최한 바 있다.
     </p>
   </section>
-  <section class="relative w-full h-[300vh] bg-black" #videos>
+  <section class="relative w-full h-[300vh] bg-[#0e0e0e]" #videos>
     @for (section of pageData.sections; track section) {
     <div
-      class="w-full h-[100vh] flex flex-col justify-center items-center bg-black"
+      class="w-full h-[100vh] flex flex-col justify-center items-center bg-[#0e0e0e]"
       #videoEl
     >
       <p class="text-3xl font-semibold pb-9 text-white">{{ section.title }}</p>

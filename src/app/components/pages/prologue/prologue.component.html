@@ -1,26 +1,6 @@
-<div class="relative w-full h-full flex flex-col justify-center items-center">
-  <div class="flex-none keen-slider" #sliderRef>
-    @for (item of [1,2,3,4,5]; track $index) {
-    <div class="keen-slider__slide h-[60vh]">
-      <img
-        class="flex-none w-full h-full object-contain"
-        [src]="'./assets/images/prologue/' + item + '.jpg'"
-        alt=""
-      />
-    </div>
-    }
-  </div>
-  <div class="flex-none keen-slider thumbnail h-[20vh]" #thumbnailRef>
-    @for (item of [1,2,3,4,5]; track $index) {
-    <div class="keen-slider__slide">
-      <img
-        class="flex-none w-full h-full object-cover"
-        [src]="'./assets/images/prologue/' + item + '.jpg'"
-        alt=""
-      />
-    </div>
-    }
-  </div>
+<div
+  class="relative w-full h-full flex flex-col py-12 justify-center items-center"
+>
   <div
     class="relative py-24 w-full flex flex-col gap-2 justify-center items-center text-white text-2xl"
   >
@@ -56,5 +36,27 @@
     <p class="kr-font" #fonts>
       2023년 12월 세 번째 연주회 <가야금 민요展> 을 개최한 바 있다.
     </p>
+  </div>
+  <div class="flex-none keen-slider" #sliderRef>
+    @for (item of [1,2,3,4,5]; track $index) {
+    <div class="keen-slider__slide h-[60vh]">
+      <img
+        class="flex-none w-full h-full object-contain"
+        [src]="'./assets/images/prologue/' + item + '.jpg'"
+        alt=""
+      />
+    </div>
+    }
+  </div>
+  <div class="flex-none keen-slider thumbnail h-[20vh]" #thumbnailRef>
+    @for (item of [1,2,3,4,5]; track $index) {
+    <div class="keen-slider__slide">
+      <img
+        class="flex-none w-full h-full object-cover"
+        [src]="'./assets/images/prologue/' + item + '.jpg'"
+        alt=""
+      />
+    </div>
+    }
   </div>
 </div>
