@@ -1,15 +1,13 @@
-import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, type OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-about',
+  selector: "app-about",
   standalone: true,
   imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
+  templateUrl: "./about.component.html",
+  styleUrl: "./about.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutComponent implements OnInit {
-
-  ngOnInit(): void { }
-
+  ngOnInit(): void {}
 }

@@ -23,7 +23,14 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
+            "assets": [
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/assets/videos",
+                "output": "/assets/videos"
+              }
+            ],
             "styles": [
               "src/styles.scss",
               "node_modules/keen-slider/keen-slider.min.css"

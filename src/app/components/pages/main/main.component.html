@@ -20,9 +20,7 @@
       <video
         class="w-full h-full object-cover"
         src=".\assets\videos\banner.mp4"
-        autoplay
-        loop
-        [muted]="true"
+        (loadedmetadata)="onLoadedMetadata($event)"
       ></video>
     </div>
   </section>
