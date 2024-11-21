@@ -1,5 +1,5 @@
 .content {
-  @apply relative w-screen h-full px-8 min-h-[100svh] flex flex-col justify-center items-center flex-none;
+  @apply relative w-full h-full px-2 sm:px-8 min-h-[100svh] flex flex-col justify-center items-center flex-none;
 }
 .videos > div {
   opacity: 0; // 처음엔 숨김
@@ -19,6 +19,14 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 1rem;
+    word-break: keep-all;
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
 }
 
 video {
@@ -38,6 +46,10 @@ svg {
   fill: white;
 
   font-size: 100px;
+
+  @media (max-width: 768px) {
+    stroke-width: 1;
+  }
 }
 
 [class^="number-slide"],

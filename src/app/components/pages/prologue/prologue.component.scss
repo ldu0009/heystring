@@ -1,5 +1,5 @@
 :host {
-  @apply relative w-screen sm:max-w-[67%] flex flex-col flex-none pt-40;
+  @apply relative w-screen sm:max-w-[67%] flex flex-col flex-none pt-12 sm:pt-40;
 }
 [class^="number-slide"],
 [class*=" number-slide"] {
@@ -33,9 +33,16 @@
 }
 .kr-font {
   font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 1rem;
+    word-break: keep-all;
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
 }
 .number-slide3 {
   background: rgb(182, 255, 64);
