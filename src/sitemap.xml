@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>https://gayageum42.com/</loc>
+    <lastmod>2024-11-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 프롤로그 페이지 -->
+  <url>
+    <loc>https://gayageum42.com/prologue</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 소개 페이지 -->
+  <url>
+    <loc>https://gayageum42.com/about</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 라이브러리 페이지 -->
+  <url>
+    <loc>https://gayageum42.com/library</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 북 페이지 -->
+  <url>
+    <loc>https://gayageum42.com/book</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 연락처 페이지 -->
+  <url>
+    <loc>https://gayageum42.com/contact</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
