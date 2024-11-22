@@ -2,7 +2,7 @@
   class="relative pb-4 pt-16 sm:pt-44 sm:pb-8 px-2 sm:px-12 w-full h-full flex flex-col"
 >
   <div class="w-full h-24 sm:h-[20rem] flex flex-row gap-6">
-    @for (book of bookList; track $index) {
+    @for (book of bookInfoList; track $index) {
     <div class="relative flex flex-col gap-2 w-full h-full">
       <button
         class="relative w-full h-full transition-all transform duration-200 ease-in-out"
@@ -36,24 +36,30 @@
     <div
       class="relative w-full h-full flex flex-col px-0 justify-between items-center"
     >
-      <div class="text-white text-xl sm:text-3xl font-semibold">
+      <div class="text-white text-2xl sm:text-4xl font-semibold py-8">
         {{ bookNames[selectedBook] }}
       </div>
+      <div class="text-white text-lg sm:text-2xl font-semibold">
+        {{ bookInfoList[selectedBook][selectedBookItem].title }}
+      </div>
       <div
-        class="relative w-full h-full py-6 sm:py-12 flex justify-center items-center"
+        class="relative w-full h-full py-6 sm:py-8 flex justify-center items-center"
         #videoDom
       >
         <youtube-player
           #player
-          [videoId]="bookList[selectedBook][selectedBookItem]"
+          [videoId]="bookInfoList[selectedBook][selectedBookItem].id"
           suggestedQuality="small"
           [width]="videoDom.offsetWidth"
           [height]="(videoDom.offsetWidth * 9) / 16"
         >
         </youtube-player>
       </div>
+      <div class="text-white text-xs sm:text-base font-semibold pb-8">
+        {{ bookInfoList[selectedBook][selectedBookItem].description }}
+      </div>
       <div class="w-full flex flex-row justify-center items-center gap-4">
-        @for (item of bookList[selectedBook]; track $index) {
+        @for (item of bookInfoList[selectedBook]; track $index) {
         <button
           class="rounded-full transition-all transform duration-200 ease-in-out"
           [ngClass]="{

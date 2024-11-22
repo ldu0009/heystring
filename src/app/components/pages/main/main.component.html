@@ -1,4 +1,7 @@
-<div class="relative w-full block overflow-hidden" #scrollField>
+<div
+  class="relative w-full flex flex-col justify-center items-center overflow-hidden"
+  #scrollField
+>
   <section class="relative w-screen h-screen bg-[#0e0e0e] mt-12 sm:mt-36">
     <div
       class="absolute top-0 w-full banner bg-[#0e0e0e]/30 flex flex-col justify-center items-center z-10"
@@ -19,9 +22,14 @@
     <div class="absolute w-full h-full z-1">
       <video
         class="w-full h-full object-cover"
-        src=".\assets\videos\banner.webm"
         (loadedmetadata)="onLoadedMetadata($event)"
-      ></video>
+        muted
+        playsinline
+        autoplay
+        loop
+      >
+        <source src=".\assets\videos\banner.webm" type="video/webm" />
+      </video>
     </div>
   </section>
   <section
@@ -60,7 +68,7 @@
       2023년 12월 세 번째 연주회 <가야금 민요展> 을 개최한 바 있다.
     </p>
   </section>
-  <section class="relative w-full h-[300vh] bg-[#0e0e0e]" #videos>
+  <section class="relative w-full sm:w-2/3 h-[300vh] bg-[#0e0e0e]" #videos>
     @for (section of pageData.sections; track section) {
     <div
       class="w-full h-[100vh] flex flex-col justify-center items-center bg-[#0e0e0e]"

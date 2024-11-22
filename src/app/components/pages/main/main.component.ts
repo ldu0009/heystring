@@ -93,6 +93,7 @@ export class MainComponent implements OnInit, AfterViewInit, OnDestroy {
   public onLoadedMetadata(e: any) {
     const target: HTMLVideoElement = e.target;
 
+    target.playsInline = true;
     target.muted = true;
     target.loop = true;
     target.autoplay = true;
