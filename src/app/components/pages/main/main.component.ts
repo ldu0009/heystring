@@ -92,7 +92,8 @@ export class MainComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public onLoadedMetadata(e: any) {
     const target: HTMLVideoElement = e.target;
-
+    target.setAttribute("playsinline", "true");
+    target.setAttribute("webkit-playsinline", "true"); // iOS 호환성
     target.playsInline = true;
     target.muted = true;
     target.loop = true;
