@@ -65,7 +65,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
       },
       {
         title: ["해태 Haetae"],
-        description: ["산조가야금 강소희"],
+        description: ["산조가야금 김보경"],
         id: "qjl4sa9QWoc",
       },
       {
@@ -101,7 +101,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
       {
         title: ["옹헤야", "가야금 4중주를 위한 '옹헤야'"],
         description: [
-          "신조가야금_강소희 장구_방지원",
+          "산조가야금_강소희 장구_방지원",
           "18현가야금I_강소희 18현가야금II_윤하영 18현가야금III_김은세 18현가야금IV_김보경",
         ],
         id: "39ke11HoAEc",
@@ -109,8 +109,8 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
       {
         title: ["앞산타령", "앞산타령 (임지선 작곡, 2005)"],
         description: [
-          "신조가야금_김은세 장구_방지워",
-          "양금_윤하영 신조가야금I_김은세 신조가야금II_김보경 신조가야금III_강소희",
+          "산조가야금_김은세 장구_방지원",
+          "양금_윤하영 산조가야금I_김은세 산조가야금II_김보경 산조가야금III_강소희",
         ],
         id: "n6alBwDigSc",
       },
@@ -120,7 +120,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
           "한강수타령 선율 주제에 의한 25현 가야금 3중주 '가람'",
         ],
         description: [
-          "신조가야금_윤하영 장구_방지원",
+          "산조가야금_윤하영 장구_방지원",
           "25현가야금I_윤하영 25현가야금II_김보경 25현가야금III_김은세",
         ],
         id: "QlUPWkbqzuE",
@@ -128,8 +128,8 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
       {
         title: ["느시랑타령", "느시랑타령 주제에 의한 가야금 4중주 '느시랑'"],
         description: [
-          "신조가야금_김보경 북,장_방지원",
-          "18가야금I_김보경 18가야금II_윤하영 신조가야금I_김은세 신조가야금II_강소희",
+          "산조가야금_김보경 북,장_방지원",
+          "18가야금I_김보경 18가야금II_윤하영 산조가야금I_김은세 산조가야금II_강소희",
         ],
         id: "jWEeoI8qWkM",
       },
@@ -138,7 +138,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
       {
         title: ["서도굿", "Vex Veil"],
         description: [
-          "채보-신조가야금 강소희 | 타악 방지원 이준호",
+          "채보-산조가야금 강소희 | 타악 방지원 이준호",
           "작곡 최민준 | 18현가야금 강소희",
         ],
         id: "o-f-TJF_u-U",
@@ -146,15 +146,15 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
       {
         title: ["서울새남굿", "25현가야금 Etude: 문門"],
         description: [
-          "체버-산조가야금 김보경 | 타악 방지원 이준호",
-          "자곡 이재준 | 25현가야금 김보경 | 타악 이준호",
+          "채보-산조가야금 김보경 | 타악 방지원 이준호",
+          "작곡 이재준 | 25현가야금 김보경 | 타악 이준호",
         ],
         id: "JARpyzKSiRg",
       },
       {
         title: ["진도씻김굿", "밤의 귀로에서"],
         description: [
-          "채보-신조가야금 김은세 | 타악 방지원 이준호",
+          "채보-산조가야금 김은세 | 타악 방지원 이준호",
           "작곡 김영상 | 25현가야금 김은세 | 타악 방지원",
         ],
         id: "SgTE0i2FG9Y",
@@ -163,7 +163,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
         title: ["동해안별신국", "달아치는 바다 옆에서"],
         description: [
           "채보-산조가야금 윤하영 | 타악 방지원 이준호",
-          "작곡 황재인 | 신조가야금 윤하영 | 타악 방지원",
+          "작곡 황재인 | 산조가야금 윤하영 | 타악 방지원",
         ],
         id: "0GPbwSgYJzo",
       },
