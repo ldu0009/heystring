@@ -22,7 +22,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('player') player: YouTubePlayer;
   public bookNames = [
     '이해식 가야금 작품展',
-    '도날드워맥 가야금 작품展',
+    '도널드워맥 가야금 작품展',
     '가야금 민요展',
     '가야금 무악展',
   ];
@@ -110,7 +110,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
         id: '39ke11HoAEc',
       },
       {
-        title: ['앞산타령', '앞산타령 (임지선 작곡, 2005)'],
+        title: ['앞산타령', '앞산타령'],
         description: [
           '산조가야금_김은세 장구_방지원',
           '양금_윤하영 산조가야금I_김은세 산조가야금II_김보경 산조가야금III_강소희',
