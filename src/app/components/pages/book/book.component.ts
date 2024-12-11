@@ -87,7 +87,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
         title: ['김해 Liquid Metal'],
         description: [
           '25현가야금 4중주 김은세 강소희 윤하영 김보경',
-          '장구 김민정 꽹가리 노동혁',
+          '장구 김민정 꽹과리 노동혁',
         ],
         id: 'PPm5T562r4o',
       },
