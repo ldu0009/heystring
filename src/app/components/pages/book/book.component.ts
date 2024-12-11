@@ -163,7 +163,7 @@ export class BookComponent implements OnInit, AfterViewInit, OnDestroy {
         id: 'SgTE0i2FG9Y',
       },
       {
-        title: ['동해안별신국', '달아치는 바다 옆에서'],
+        title: ['동해안별신굿', '달아치는 바다 옆에서'],
         description: [
           '채보-산조가야금 윤하영 | 타악 방지원 이준호',
           '작곡 황재인 | 산조가야금 윤하영 | 타악 방지원',
